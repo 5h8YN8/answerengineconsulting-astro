@@ -1,0 +1,230 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const frontmatter = {
+  title: "",
+  description: ""
+};
+---
+
+<BaseLayout {...frontmatter}>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://answerengineconsulting.com#organization",
+      "name": "Answer Engine Consulting",
+      "url": "https://answerengineconsulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/69667842ad1699d01a8d5efa/696bab0652fe6011f6576975_AEC%20logo%20modern%20copy.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://answerengineconsulting.com#author",
+      "name": "Shayna Stewart",
+      "jobTitle": "AEO GTM Engineer",
+      "url": "https://answerengineconsulting.com",
+      "worksFor": {
+        "@id": "https://answerengineconsulting.com#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#webpage",
+      "url": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search",
+      "name": "What is AI Search?",
+      "description": "AI Search uses artificial intelligence technologies to enhance search experiences by generating conversational and contextually relevant results. It optimises content through structured data, conversational flows, answer ecosystem design and full‑funnel management to improve AI visibility, shorten sales cycles and accelerate revenue. AI Search complements traditional SEO but focuses on AI answer engines and measurable business outcomes.",
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com/answers#hub"
+      },
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      },
+      "mainEntity": {
+        "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#faq"
+      },
+      "mentions": [
+        {
+          "@id": "https://answerengineconsulting.com/answers/aeo/what-is-answer-engine-optimization-aeo"
+        },
+        {
+          "@id": "https://answerengineconsulting.com/answers/ai-search/how-do-you-optimize-a-website-for-ai-search"
+        },
+        {
+          "@id": "https://answerengineconsulting.com/answers/ai-optimization/how-do-you-measure-ai-search-visibility"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#faq",
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AI Search?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI Search refers to the use of artificial intelligence technologies to enhance search experiences. It enables more conversational and contextually relevant results and focuses on optimising content to be cited by answer engines.\n\n- Structured data & conversational content: AI Search leverages structured data and question‑answer flows to help AI models understand your content.\n- Answer ecosystem optimisation: It goes beyond keyword rankings to influence AI answer engines and improve decision‑maker clarity.\n- Revenue acceleration: By delivering authoritative answers and reducing friction, AI Search shortens sales cycles and increases pipeline velocity.\n- Differentiation from SEO: AI Search complements traditional SEO but focuses on AI visibility and answer relevance.\n\nOptimising for AI Search helps your organisation become the preferred source for AI‑driven queries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does AI Search differ from traditional SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI Search shifts the focus from ranking pages in search results to being cited by AI models. It prioritises structured data, conversational content and revenue impact over keyword density.\n\n- Structured & conversational content: Uses JSON‑LD and question–answer flows instead of relying solely on keyword‑optimised blog posts.\n- Answer ecosystem focus: Targets answer engines and AI summarisation rather than search algorithms alone.\n- Full‑funnel metrics: Measures success by pipeline velocity, sales cycle compression and revenue impact, not just traffic volumes.\n- Cross‑functional collaboration: Requires alignment across marketing, sales and technical teams to design cohesive answer ecosystems.\n- Complementary to SEO: Works alongside traditional SEO to maximise both AI and organic search visibility.\n\nThese distinctions make AI Search more strategic and outcome‑oriented than conventional SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the key components of optimizing for AI Search?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Optimising for AI Search requires a blend of technical and strategic elements to ensure AI models can interpret and cite your expertise.\n\n- Structured data implementation: Use JSON‑LD and schema to encode entity relationships and improve AI understanding.\n- Conversational content architecture: Develop Q&A flows that mirror buyer questions and reduce cognitive friction.\n- Topic clusters & internal linking: Organise content into clusters and link them together to build authority and guide answer pathways.\n- Full customer journey ownership: Align content across awareness, consideration and decision stages to compress sales cycles.\n- Measurement & iteration: Track AI visibility, answer gap reduction and revenue metrics to refine strategy.\n\nThese components collectively increase citation probability and accelerate revenue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What role does structured data play in AI Search?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Structured data forms the foundation for AI models to interpret and cite your content accurately.\n\n- Explicit semantics: Schema mark‑up provides clear signals about entities and relationships, making content machine‑readable.\n- Rich results & higher CTR: Structured data enables rich answer formats and increases click‑through rates.\n- Improved AI accuracy: Research shows that structured pages improve AI response accuracy and completeness by about 30%.\n- Supports answer ecosystems: Combined with conversational content, schema helps AI models connect questions to authoritative answers.\n\nImplementing structured data is therefore essential for AI Search success."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there risks associated with adopting AI Search strategies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI Search requires planning and coordination; there are risks if not executed strategically.\n\n- Workflow misalignment: Existing marketing processes may need restructuring to support conversational content.\n- Unclear ROI: Without proper measurement frameworks, benefits may be difficult to quantify.\n- Cross‑functional complexity: Coordination across teams can be challenging without executive sponsorship.\n- Citation errors: Poor schema or content design may lead to incorrect AI citations or diminished authority.\n- Resource requirements: Building answer ecosystems requires time and expertise, which may strain smaller teams.\n\nAddressing these risks through phased implementation and clear metrics ensures a successful AI Search program."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the long-term benefits of investing in AI Search optimization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Long‑term investment in AI Search pays dividends across revenue and authority.\n\n- Defensible category authority: Structured content and topic clusters position your brand as the go‑to resource.\n- Accelerated revenue velocity: Educated prospects and compressed sales cycles lead to faster deals.\n- Reduced sales friction: Authoritative answers minimise repetitive explanations and objections.\n- Sustainable answer ecosystem: A well‑maintained content architecture continually improves AI visibility and decision‑maker clarity.\n- Competitive advantage: Early adoption of AI Search positions your organisation ahead of competitors.\n\nThese benefits compound over time, making AI Search a strategic investment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AI Search the same as traditional SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI Search complements but does not replace traditional SEO.\n\n- AI Search focuses on answer engines and AI‑generated summaries, whereas SEO targets keyword rankings.\n- Structured data and conversational content drive AI visibility; SEO emphasises technical optimisation and content quality.\n- Combining AI Search with SEO maximises both AI citation and organic traffic.\n\nA hybrid approach delivers comprehensive visibility across search and answer environments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can small organizations benefit from AI Search strategies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes – AI Search can empower small organisations to compete in emerging AI environments.\n\n- Foundational packages make structured data and conversational content accessible.\n- Building an authoritative answer ecosystem improves visibility without large ad budgets.\n- Shorter sales cycles and improved decision‑maker clarity benefit resource‑constrained teams.\n\nStarting small with clear goals enables growth and scalability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can I see results from AI Search optimization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timelines vary, but early gains are possible when focusing on foundational elements.\n\n- Starter packages can deliver visibility improvements within a few months.\n- Early metrics include increased AI citations, answer relevance and engagement.\n- Full revenue impact typically emerges over 3–6 months, depending on scope and maturity.\n- Continuous optimisation and expansion sustain gains over time.\n\nPhased implementation provides both quick wins and long‑term results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What metrics should I use to measure AI Search success?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Success should be measured by both AI‑specific and revenue metrics.\n\n- AI visibility tracking monitors answer placements and citations.\n- Answer gap reduction measures how effectively your content addresses buyer questions.\n- Full‑funnel authority indicators assess topic cluster strength and internal linking.\n- Content citation improvements reveal progress in AI‑generated summaries.\n- Pipeline and revenue metrics quantify sales cycle compression and revenue acceleration.\n\nThese metrics together provide a holistic view of AI Search performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will AI Search replace traditional SEO methods entirely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI Search expands visibility into answer ecosystems but does not replace core SEO practices.\n\n- Traditional SEO remains essential for organic search traffic and technical performance.\n- AI Search adds an additional layer of optimisation for AI answer engines.\n- Combining both approaches maximises reach and authority in search and AI environments.\n\nA combined strategy is the most effective path to sustainable visibility and growth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can my organization start exploring AI Search optimization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Begin by assessing your current state and aligning stakeholders.\n\n- Review your existing content architecture, structured data usage and internal linking.\n- Evaluate AI search visibility to identify baseline performance and opportunities.\n- Engage cross‑functional stakeholders to align goals and responsibilities.\n- Collaborate with strategic advisory providers like Answer Engine Consulting to develop a tailored plan.\n- Set measurable objectives tied to revenue and sales cycle reduction.\n\nThis discovery phase ensures that your AI Search strategy is grounded in data and aligned with business outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What preliminary actions should I take before investing in AI Search strategies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lay the groundwork with foundational improvements and clear metrics.\n\n- Implement structured data (JSON‑LD) and ensure critical pages use schema.\n- Map conversational content flows and create Q&A sections addressing buyer questions.\n- Develop topic clusters and optimise internal links to support answer pathways.\n- Create or refine authority pages aligned with your value propositions.\n- Define KPIs for AI visibility, answer gap reduction, pipeline velocity and revenue growth.\n\nThese actions prepare your organisation to fully capitalise on AI Search initiatives."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#article",
+      "headline": "What is AI Search?",
+      "description": "AI Search uses artificial intelligence technologies to enhance search experiences by generating conversational and contextually relevant results. It optimises content through structured data, conversational flows, answer ecosystem design and full‑funnel management to improve AI visibility, shorten sales cycles and accelerate revenue. AI Search complements traditional SEO but focuses on AI answer engines and measurable business outcomes.",
+      "datePublished": "2026-02-25T16:56:39.078Z",
+      "dateModified": "2026-02-25T23:59:30.000Z",
+      "author": {
+        "@id": "https://answerengineconsulting.com#author"
+      },
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#webpage"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://answerengineconsulting.com/answers#hub",
+      "url": "https://answerengineconsulting.com/answers",
+      "name": "Answers",
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://answerengineconsulting.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://answerengineconsulting.com/answers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What is AI Search?",
+          "item": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <div class="content" set:html={`<!-- TODO: add content -->`} />
+</BaseLayout>

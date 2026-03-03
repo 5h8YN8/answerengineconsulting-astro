@@ -1,0 +1,224 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const frontmatter = {
+  title: "",
+  description: ""
+};
+---
+
+<BaseLayout {...frontmatter}>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://answerengineconsulting.com#author",
+      "name": "Shayna Stewart",
+      "jobTitle": "AEO GTM Engineer",
+      "url": "https://answerengineconsulting.com/about",
+      "knowsAbout": [
+        "Answer Engine Optimization",
+        "AI Search Visibility",
+        "Structured Data Implementation",
+        "Conversational Content Architecture",
+        "B2B Revenue Strategy"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://answerengineconsulting.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://answerengineconsulting.com/answers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AEO",
+          "item": "https://answerengineconsulting.com/answers/aeo"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AEC pricing structure",
+          "item": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting#webpage",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting",
+      "name": "What is the pricing structure of Answer Engine Consulting?",
+      "description": "Answer Engine Consulting offers three engagement tiers: Starter ($3,000 one-time) for foundational answer ecosystem setup, Growth ($5,000 one-time) for expanded authority architecture, and Authority ($8,000/month) for ongoing optimization, measurement, and competitive repositioning.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com#website"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-summary",
+          ".depth-section .narrative p:first-of-type"
+        ]
+      },
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "@id": "https://answerengineconsulting.com/pricing",
+          "name": "AEC Pricing"
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search",
+          "name": "What is AI Search?"
+        },
+        {
+          "@type": "Article",
+          "@id": "https://answerengineconsulting.com/answers/aeo/what-are-aeo-best-practices",
+          "name": "AEO best practices"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting#article",
+      "headline": "What is the pricing structure of Answer Engine Consulting?",
+      "description": "Answer Engine Consulting offers three engagement tiers: Starter ($3,000 one-time) for foundational answer ecosystem setup, Growth ($5,000 one-time) for expanded authority architecture, and Authority ($8,000/month) for ongoing optimization, measurement, and competitive repositioning.",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting",
+      "author": {
+        "@id": "https://answerengineconsulting.com#author"
+      },
+      "datePublished": "2026-02-27",
+      "dateModified": "2026-02-27",
+      "inLanguage": "en-US",
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Answer Engine Optimization",
+        "url": "https://answerengineconsulting.com/answers/aeo/what-is-answer-engine-optimization-aeo"
+      },
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting#webpage"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting#faq",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-is-the-pricing-structure-of-answer-engine-consulting",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the pricing model suitable for large enterprises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Authority program at $8,000/month is designed for enterprise-scale answer ecosystem management — covering continuous answer gap expansion, competitive AI citation analysis, and quarterly pipeline correlation reporting. Custom enterprise scopes are also available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the typical ROI expected from a strategic engagement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Starter and Growth packages typically produce initial AI citation improvements within 6–10 weeks. The Authority program compounds this over time — organizations consistently on the program for two or more quarters typically see measurable sales cycle compression and increased pipeline quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see measurable results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initial citation improvements from Starter and Growth packages appear within 6–10 weeks. Full answer ecosystem maturity — where the coverage is broad enough to influence buyer research across the full purchase journey — generally develops over 6–12 months on the Authority program."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <div class="content" set:html={`<header class="hero">
+<h1>What is the pricing structure of Answer Engine Consulting?</h1>
+<p class="answer-summary">
+    Answer Engine Consulting offers a structured pricing model comprising one-time fixed-price packages for foundational authority setup and a monthly subscription for ongoing optimization. Packages range from $3,000 to $8,000 monthly, designed to align with strategic revenue outcomes and measurable AI visibility improvements.
+  </p>
+<p class="page-meta">Last reviewed: February 2026 — Answer Engine Consulting</p></header>
+<section class="depth-section">
+<div class="narrative">
+
+<p>Answer Engine Consulting's pricing framework is strategically designed to accommodate organizations seeking to enhance AI visibility, answer ecosystem presence, and revenue acceleration. The costs reflect the level of engagement and scope of work, from foundational authority setup to full customer journey ownership. See also: <a href="https://answerengineconsulting.com/pricing">View pricing</a>.</p><p>The one-time packages facilitate initial testing and impact measurement, while the subscription model supports sustained growth and continuous optimization. This layered approach ensures clients can choose adaptable options aligned with their sales and marketing maturity, while also providing measurable ROI through AI visibility, answer gap reporting, and authority expansion.</p></div>
+<div class="key-concept">
+<h3>One-time fixed-price packages</h3>
+<p>Initial engagement bundles that focus on foundational authority and structured data setup, with a clear scope and cost.</p>
+</div>
+<div class="key-concept">
+<h3>Monthly subscription model</h3>
+<p>Ongoing ongoing engagement designed for authority expansion, conversational content refinement, and continuous AI visibility enhancement.</p>
+</div>
+<div class="key-concept">
+<h3>AI visibility tracking</h3>
+<p>Measurable insights into how well content and structured data influence answer engines and AI-generated summaries.</p>
+</div>
+<div class="case-study"><h3>In Practice</h3><p>An organization evaluating our Growth package asked: "What exactly do we get?" We walked them through the deliverables — topic cluster architecture, structured data implementation across 20+ pages, conversational Q&amp;A pages for their top 10 buyer questions, and a baseline AI visibility report. That clarity of scope was what closed the engagement. No vague promises about "more traffic." See also: <a href="https://answerengineconsulting.com/answers/ai-search/what-is-ai-search">What is AI Search?</a>. See also: <a href="https://answerengineconsulting.com/answers/aeo/what-are-aeo-best-practices">AEO best practices</a>.</p></div></section>
+<section class="supporting-questions">
+<div class="qa-block">
+<h2>What are the main packages offered by Answer Engine Consulting?</h2>
+<p>The primary packages are Starter, Growth, and Authority, each tailored to different levels of authority building, structured data implementation, and ongoing optimization, priced at $3,000 one-time, $5,000 one-time, and $8,000 per month respectively.</p>
+</div>
+<div class="qa-block">
+<h2>How does the pricing reflect the value delivered?</h2>
+<p>The pricing aligns with strategic outcomes such as sales cycle shortening, authority establishment, and AI visibility gains, emphasizing revenue impact over mere traffic generation.</p>
+</div>
+<div class="qa-block">
+<h2>Can organizations test the services before committing long-term?</h2>
+<p>Yes, the one-time packages allow organizations to gauge early impact on AI visibility and answer ecosystem performance before scaling to full authority management.</p>
+</div>
+</section>
+<section class="tradeoffs">
+<h2>Tradeoffs</h2>
+<div class="pros">
+<h3>Pros</h3>
+<ul>
+<li>Clear, measurable ROI through AI visibility and authority metrics.</li><li>Flexible engagement options from foundational to comprehensive authority coverage.</li><li>Premium strategic advisory ensures alignment with revenue goals.</li>
+</ul>
+</div>
+<div class="cons">
+<h3>Considerations</h3>
+<ul>
+<li>Higher upfront costs compared to freelancers or basic SEO schemes.</li><li>Longer ramp-up time to realize full benefits, requiring strategic commitment.</li>
+</ul>
+</div>
+</section>
+<section class="authority">
+<h2>Why This Matters</h2>
+
+
+<p>Answer Engine Consulting practitioners have worked hands-on with structured data, conversational architecture, and answer gap analysis across dozens of B2B engagements — not as a theoretical framework, but as a practiced methodology refined through real client outcomes.</p><p>Every recommendation on this page reflects direct experience building and measuring answer ecosystems: what produces fast AI citation improvements, what stalls, and what requires longer strategic investment to realize.</p></section>
+<section class="faqs">
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<h3>Is the pricing model suitable for large enterprises?</h3>
+<p>Yes, the tiered packages and ongoing subscription model are designed to scale with larger organizations seeking comprehensive authority and AI visibility growth.</p>
+</div>
+<div class="faq">
+<h3>What is the typical ROI expected from a strategic engagement?</h3>
+<p>While ROI varies, clients typically experience shorter sales cycles, higher decision-maker clarity, and measurable increases in answer ecosystem authority.</p>
+</div>
+<div class="faq">
+<h3>How long does it take to see measurable results?</h3>
+<p>Initial visibility improvements from the foundational packages can be observed within a few months, with full authority and answer ecosystem effects maturing over six to twelve months.</p>
+</div>
+</section>`} />
+</BaseLayout>

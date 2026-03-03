@@ -1,0 +1,95 @@
+---
+// src/layouts/BaseLayout.astro
+// Base layout replacing React's ArticleLayout component.
+// All meta, OG tags, canonical, and JSON-LD schema are handled here.
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  publishedDate?: string;
+  modifiedDate?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  publishedDate,
+  modifiedDate,
+  ogImage,
+} = Astro.props;
+
+const siteUrl    = import.meta.env.PUBLIC_SITE_URL || 'https://answerengineconsulting.com';
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+const ogImageUrl   = ogImage   || `${siteUrl}/og-default.png`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="article" />
+    <meta property="og:url"         content={canonicalUrl} />
+    <meta property="og:title"       content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image"       content={ogImageUrl} />
+    <meta property="og:site_name"   content="Answer Engine Consulting" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image"       content={ogImageUrl} />
+
+    {publishedDate && <meta property="article:published_time" content={publishedDate} />}
+    {modifiedDate  && <meta property="article:modified_time"  content={modifiedDate} />}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <!-- Per-page <head> content (e.g. JSON-LD schema) -->
+    <slot name="head" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="/" class="logo">Answer Engine Consulting</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <article class="article-body">
+        <slot />
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; {new Date().getFullYear()} Answer Engine Consulting. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

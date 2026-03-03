@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const frontmatter = {
+  title: "",
+  description: ""
+};
+---
+
+<BaseLayout {...frontmatter}>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://answerengineconsulting.com#author",
+      "name": "Shayna Stewart",
+      "jobTitle": "AEO GTM Engineer",
+      "url": "https://answerengineconsulting.com/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/shaynastewart/"
+      ],
+      "knowsAbout": [
+        "Answer Engine Optimization",
+        "AI Search Visibility",
+        "Structured Data Implementation",
+        "Conversational Content Architecture",
+        "B2B Revenue Strategy"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://answerengineconsulting.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://answerengineconsulting.com/answers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AEO",
+          "item": "https://answerengineconsulting.com/answers/aeo"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AEO engagement deliverables",
+          "item": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement#webpage",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement",
+      "name": "AEO engagement deliverables",
+      "description": "Every AEO engagement includes four core deliverables: an answer gap analysis identifying missing buyer-question coverage, JSON-LD structured data implementation across priority pages, conversational Q&A content for top buyer questions, and an AI visibility report tracking citation frequency and accuracy across target platforms.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com#website"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-summary",
+          ".qa-block:first-of-type p"
+        ]
+      },
+      "mentions": [
+        {
+          "@type": "Article",
+          "@id": "https://answerengineconsulting.com/answers/aeo/what-are-aeo-best-practices",
+          "name": "AEO best practices"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://answerengineconsulting.com/pricing",
+          "name": "View pricing"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://answerengineconsulting.com/answers",
+          "name": "Answer Hub"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement#article",
+      "headline": "AEO engagement deliverables",
+      "description": "Every AEO engagement includes four core deliverables: an answer gap analysis identifying missing buyer-question coverage, JSON-LD structured data implementation across priority pages, conversational Q&A content for top buyer questions, and an AI visibility report tracking citation frequency and accuracy across target platforms.",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement",
+      "author": {
+        "@id": "https://answerengineconsulting.com#author"
+      },
+      "datePublished": "2026-02-27",
+      "dateModified": "2026-02-27",
+      "inLanguage": "en-US",
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Answer Engine Optimization",
+        "url": "https://answerengineconsulting.com/answers/aeo/what-is-answer-engine-optimization-aeo"
+      },
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement#webpage"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement#faq",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-deliverables-are-included-in-an-aeo-engagement",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results from AEO deliverables?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Structured data improvements are typically indexed within 2–3 weeks. AI citation improvements for targeted queries begin appearing within 6–10 weeks of implementation. Sales cycle impact — prospects arriving better informed, shorter time-to-demo — generally becomes observable after two full sales cycles on the updated content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are deliverables the same across all engagement tiers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The core deliverable types are consistent across Starter, Growth, and Authority — answer gap analysis, structured data, conversational content, and visibility reporting. The difference is scale: Starter covers 5–10 priority pages, Growth covers 20+ pages with competitive benchmarking, and Authority delivers continuous expansion and monthly reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the deliverables after the engagement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All deliverables are fully owned by the client. Structured data implementations live on your site, content pages are yours, and reports are delivered as editable documents. There are no proprietary platforms or lock-in — the work is built into your infrastructure, not ours."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <div class="content" set:html={`<header class="hero">
+<h1>What deliverables are included in an AEO engagement?</h1>
+<p class="answer-summary">
+    An AEO engagement includes comprehensive deliverables such as authority page creation, structured data implementation, conversational content architecture, and ongoing performance optimization aimed at accelerating revenue and enhancing AI visibility.
+  </p>
+<p class="page-meta">Last reviewed: February 2026 — Answer Engine Consulting</p></header>
+<section class="depth-section">
+<div class="narrative">
+<p>Answer Engine Optimization (AEO) engagement delivers a strategic set of activities designed to transform traditional websites into answer ecosystems that maximize AI visibility and sales efficiency. Deliverables encompass creation of authoritative content, structured data deployment, conversational funnel design, and tailored reporting—all aligned with measurable revenue impact. This integrated approach reduces sales friction, shortens sales cycles, and establishes defensible category authority, distinguishing from typical SEO efforts that focus solely on keyword rankings. See also: <a href="https://answerengineconsulting.com/pricing">View pricing</a>.</p>
+</div>
+<div class="key-concept">
+<h3>Authority pages</h3>
+<p>High-impact, strategically crafted pages aimed at establishing and reinforcing topic authority in specific niches.</p>
+</div>
+<div class="key-concept">
+<h3>Structured data</h3>
+<p>Metadata embedded within web pages, such as JSON-LD, used to enhance AI understanding and answer engine recognition.</p>
+</div>
+<div class="key-concept">
+<h3>Conversational content architecture</h3>
+<p>Designing content and internal linking to facilitate natural, answer-focused interactions within AI and answer engines.</p>
+</div>
+<div class="key-concept">
+<h3>Answer gap reporting</h3>
+<p>Identifying and filling content gaps that hinder AI answer accuracy and visibility.</p>
+</div>
+<div class="key-concept">
+<h3>Revenue-first strategy</h3>
+<p>Prioritizing activities that directly contribute to revenue acceleration and sales cycle shortening.</p>
+</div>
+<div class="case-study"><h3>In Practice</h3><p>A growth-stage technology company asked us before signing: "What exactly will we have at the end?" We walked them through the four deliverables in order — answer gap roadmap, structured data on 12 pages, five new conversational Q&amp;A pages for their top buyer questions, and a citation baseline report. That specificity was what converted them. Six weeks after delivery, their sales team reported that two prospects had mentioned finding answers on Perplexity before reaching out — a first for their inbound motion. See also: <a href="https://answerengineconsulting.com/answers/aeo/what-are-aeo-best-practices">AEO best practices</a>. See also: <a href="https://answerengineconsulting.com/answers">Answer Hub</a>.</p></div></section>
+<section class="supporting-questions">
+<div class="qa-block">
+<h2>What is the primary focus of AEO deliverables?</h2>
+<p>The primary focus is on building authoritative content, implementing structured data, designing conversational funnels, and providing measurable AI visibility improvements aimed at accelerating revenue.</p>
+</div>
+<div class="qa-block">
+<h2>Are these deliverables customizable?</h2>
+<p>Yes, deliverables are tailored based on client needs, with foundational packages for quick testing and comprehensive solutions for full customer journey ownership.</p>
+</div>
+<div class="qa-block">
+<h2>How does AEO differ from traditional SEO?</h2>
+<p>AEO emphasizes full customer journey ownership, AI visibility, answer ecosystem creation, and revenue impact rather than just keyword rankings or organic traffic.</p>
+</div>
+</section>
+<section class="tradeoffs">
+<h2>Tradeoffs</h2>
+<div class="pros">
+<h3>Pros</h3>
+<ul>
+<li>Provides measurable impact on revenue and sales cycle speed.</li>
+</ul>
+</div>
+<div class="cons">
+<h3>Considerations</h3>
+<ul>
+<li>Requires cross-functional coordination and may involve higher upfront investment.</li>
+</ul>
+</div>
+</section>
+<section class="authority">
+<h2>Why This Matters</h2>
+
+
+<p>Answer Engine Consulting practitioners have worked hands-on with structured data, conversational architecture, and answer gap analysis across dozens of B2B engagements — not as a theoretical framework, but as a practiced methodology refined through real client outcomes.</p><p>Every recommendation on this page reflects direct experience building and measuring answer ecosystems: what produces fast AI citation improvements, what stalls, and what requires longer strategic investment to realize.</p></section>
+<section class="faqs">
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<h3>How long does it take to see results from AEO deliverables?</h3>
+<p>Results can be observed within a few weeks to months, depending on the scope, content priority, and existing site maturity.</p>
+</div>
+</section>`} />
+</BaseLayout>

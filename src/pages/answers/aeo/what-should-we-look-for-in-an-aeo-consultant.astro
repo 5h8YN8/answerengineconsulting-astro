@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const frontmatter = {
+  title: "",
+  description: ""
+};
+---
+
+<BaseLayout {...frontmatter}>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://answerengineconsulting.com#organization",
+      "name": "Answer Engine Consulting",
+      "url": "https://answerengineconsulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/69667842ad1699d01a8d5efa/696bab0652fe6011f6576975_AEC%20logo%20modern%20copy.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://answerengineconsulting.com#author",
+      "name": "Shayna Stewart",
+      "jobTitle": "AEO GTM Engineer",
+      "url": "https://answerengineconsulting.com",
+      "worksFor": {
+        "@id": "https://answerengineconsulting.com#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#webpage",
+      "url": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant",
+      "name": "What should marketing and sales leaders consider when selecting an Answer Engine Optimization (AEO) consultant?",
+      "description": "When evaluating an AEO consultant, leaders should focus on the provider's strategic approach, their ability to manage the entire customer journey, and their experience in implementing conversational content architecture and structured data. Key considerations include the consultant's capacity to deliver measurable revenue impact through structured execution, and their alignment with a revenue-first strategy that aims to shorten sales cycles and establish defensible AI visibility. Choosing a partner with proven senior-level expertise ensures sustainable authority and measurable outcomes tailored to complex sales environments.",
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com/answers#hub"
+      },
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      },
+      "mainEntity": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#faq"
+      },
+      "mentions": [
+        {
+          "@id": "https://answerengineconsulting.com/answers/ai-search/what-is-ai-search"
+        },
+        {
+          "@id": "https://answerengineconsulting.com/answers/aeo/what-are-aeo-best-practices"
+        },
+        {
+          "@id": "https://answerengineconsulting.com/answers/aeo/what-roi-can-organizations-expect-from-aeo"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#faq",
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What should marketing and sales leaders consider when selecting an Answer Engine Optimization (AEO) consultant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selecting the right Answer Engine Optimization partner requires more than checking off SEO credentials. Leaders should look for a strategic advisor who can manage the full customer journey and align AI visibility initiatives with revenue goals. AEC's approach emphasizes measurable impact, cross‑functional execution and senior‑level expertise.\n- Strategic approach: ability to design answer ecosystems rather than focusing solely on keywords or traffic metrics.\n- Full customer journey ownership: proven experience implementing conversational content architecture and structured data.\n- Measurable revenue impact: commitment to shortening sales cycles and boosting pipeline velocity.\n- Senior‑level advisory: demonstrated ability to align marketing, sales and technical teams around AI‑driven goals.\nChoosing a partner who meets these criteria ensures sustainable authority and defensible AI visibility in complex sales environments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the consultant's strategic approach influence revenue acceleration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A strategic AEO consultant prioritizes full customer journey ownership, integrating conversational content architecture and structured data to enhance AI visibility and answer ecosystem robustness, ultimately compressing sales cycles and accelerating revenue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is experience in managing technical and content silos important for an AEO consultant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Experience in managing silos ensures the consultant can coordinate cross-functional teams, delivering cohesive implementation of conversational funnels and structured data that maximize AI answer quality and visibility, leading to more predictable revenue outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks of selecting a less strategic or technical-focused provider?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choosing a consultant without strategic insight or technical depth can waste resources and fail to deliver revenue impact. Without a cohesive plan, AEO efforts may not translate into measurable outcomes.\n- Superficial improvements: focusing on vanity metrics like traffic and rankings rather than AI visibility and authority.\n- Missed revenue impact: absence of structured execution leads to little or no acceleration of sales cycles.\n- Lack of differentiation: competitors may capture AI answer slots if your provider lacks deep expertise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can measurable ROI be assessed in AEO engagements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO success is demonstrated through clear metrics that tie content and AI performance to sales outcomes.\n- AI visibility tracking: measures how often your content appears in AI answers and voice assistants.\n- Answer gap reduction: tracks the number of previously unanswered questions that are now addressed.\n- Sales cycle compression: compares average deal lengths before and after AEO implementation.\n- Pipeline velocity: monitors changes in lead progression and conversion rates over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What role does senior-level advisory play in the success of an AEO project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Senior‑level guidance ensures that tactical execution aligns with business objectives and that complex challenges are addressed proactively.\n- Strategic alignment: connects AI initiatives to revenue goals and key performance indicators.\n- Experience in complex environments: navigates organizational silos and manages change effectively.\n- Market insight: provides guidance on emerging AI trends and competitive dynamics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an AEO consultant provide quick results like traditional SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, AEO consulting emphasizes strategic, revenue-aligned initiatives that require a different approach than traditional SEO; results depend on structured execution and long-term authority development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is higher pricing justified for an AEO consultant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, because premium strategic advisory and full customer journey management lead to measurable revenue outcomes, which typically require a higher level of expertise and integrated execution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does AEO differ from standard SEO services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO focuses on optimizing answer engines and AI visibility to shorten sales cycles and improve customer decision-making, whereas standard SEO primarily targets keyword rankings and traffic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my organization lacks existing conversational funnels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An experienced AEO consultant can design and implement conversational content architecture as part of their service, establishing full customer journey ownership from scratch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are measurable impacts on revenue common with AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When executed strategically, AEO can deliver measurable impacts such as increased AI answer quality, reduced sales friction, and faster pipeline progression, which are tracked through specific visibility and answer gap metrics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should a leader proceed if considering engaging an AEO consultant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leaders should evaluate potential partners based on their strategic approach, experience with full-funnel integration, and ability to provide measurable revenue impact, while requesting case studies and performance metrics."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#article",
+      "headline": "What should marketing and sales leaders consider when selecting an Answer Engine Optimization (AEO) consultant?",
+      "description": "When evaluating an AEO consultant, leaders should focus on the provider's strategic approach, their ability to manage the entire customer journey, and their experience in implementing conversational content architecture and structured data. Key considerations include the consultant's capacity to deliver measurable revenue impact through structured execution, and their alignment with a revenue-first strategy that aims to shorten sales cycles and establish defensible AI visibility. Choosing a partner with proven senior-level expertise ensures sustainable authority and measurable outcomes tailored to complex sales environments.",
+      "datePublished": "2026-02-25T16:56:39.078Z",
+      "dateModified": "2026-02-25T22:50:00.000Z",
+      "author": {
+        "@id": "https://answerengineconsulting.com#author"
+      },
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#webpage"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://answerengineconsulting.com/answers#hub",
+      "url": "https://answerengineconsulting.com/answers",
+      "name": "Answers",
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://answerengineconsulting.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://answerengineconsulting.com/answers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What should marketing and sales leaders consider when selecting an Answer Engine Optimization (AEO) consultant?",
+          "item": "https://answerengineconsulting.com/answers/aeo/what-should-we-look-for-in-an-aeo-consultant"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <div class="content" set:html={`<!-- TODO: add content -->`} />
+</BaseLayout>

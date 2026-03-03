@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const frontmatter = {
+  title: "",
+  description: ""
+};
+---
+
+<BaseLayout {...frontmatter}>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://answerengineconsulting.com#organization",
+      "name": "Answer Engine Consulting",
+      "url": "https://answerengineconsulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/69667842ad1699d01a8d5efa/696bab0652fe6011f6576975_AEC%20logo%20modern%20copy.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://answerengineconsulting.com#author",
+      "name": "Shayna Stewart",
+      "jobTitle": "AEO GTM Engineer",
+      "url": "https://answerengineconsulting.com",
+      "worksFor": {
+        "@id": "https://answerengineconsulting.com#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#webpage",
+      "url": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams",
+      "name": "Why does AI search matter for modern marketing teams?",
+      "description": "AI search, through answer engine optimization (AEO), is critical for modern marketing teams because it enables the creation of answer ecosystems that improve AI visibility and category authority. This approach helps shorten sales cycles, reduce friction in buyer decision-making, and provides measurable revenue impact, differentiating teams in competitive environments. The focus shifts from traditional traffic metrics to revenue-driven outcomes that align with strategic business goals.",
+      "isPartOf": {
+        "@id": "https://answerengineconsulting.com/answers#hub"
+      },
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      },
+      "mainEntity": {
+        "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#faq"
+      },
+      "mentions": [
+        {
+          "@id": "https://answerengineconsulting.com/answers/aeo/what-is-answer-engine-optimization-aeo"
+        },
+        {
+          "@id": "https://answerengineconsulting.com/answers/ai-search/how-do-you-optimize-a-website-for-ai-search"
+        },
+        {
+          "@id": "https://answerengineconsulting.com/answers/ai-optimization/how-do-you-measure-ai-search-visibility"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#faq",
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does AI search matter for modern marketing teams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI search, through answer engine optimization (AEO), is critical for modern marketing teams because it enables the creation of answer ecosystems that improve AI visibility and category authority. This approach helps shorten sales cycles, reduce friction in buyer decision-making, and provides measurable revenue impact, differentiating teams in competitive environments. The focus shifts from traditional traffic metrics to revenue-driven outcomes that align with strategic business goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does answer engine optimization (AEO) differ from traditional SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO focuses on optimizing content for AI-driven answer engines, emphasizing structured data, conversational content, and answer gap identification to increase AI visibility, rather than solely targeting keyword rankings or organic traffic. This approach aims to build a defensible answer ecosystem that directly supports revenue acceleration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the key components of an effective AI search strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An effective AI search strategy includes structured data implementation (e.g., JSON-LD), conversational content architecture, authoritative topic cluster development, and cross-functional collaboration to ensure full customer journey ownership, all designed to improve answer ecosystem visibility and reduce sales friction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the risks of not adopting AI search optimization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Failure to adopt AI search optimization can result in missed opportunities for category authority, longer sales cycles, less decision-maker clarity, and AI citations of competitors instead of your content, ultimately putting companies at a strategic disadvantage in evolving AI environments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AI search optimization just another form of traditional SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, AI search optimization (AEO) is distinct from traditional SEO. While SEO focuses on keyword rankings and organic traffic, AEO prioritizes answer ecosystem visibility, structured data, conversational content, and measurable revenue impacts aligned with AI and answer engines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can small organizations benefit from AI search strategies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, small organizations can benefit by establishing defensible answer ecosystems early, enabling faster sales cycles and enhanced category authority, but they should tailor implementations to scale and resource availability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it typically take to see measurable results from AI search optimization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Results can vary based on implementation scope and current maturity; however, clients often begin to see initial improvements in answer visibility and decision-maker engagement within a few months, especially with targeted packages like 'Starter' or 'Growth'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AI search optimization suitable for all industries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While most industries can benefit, those with complex sales cycles or a need for authoritative content to shorten buyer decision processes see the greatest advantages from AI search optimization efforts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I measure the success of AI search initiatives?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Success measurement involves tracking AI visibility, answer gap closure, answer ecosystem authority, and the impact on revenue and sales cycle length using out-of-the-box reporting tools designed for measurable outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the initial step to start integrating AI search into my marketing strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The initial step is to assess current answer ecosystem capabilities and identify key content gaps, then engage with a strategic advisor to design a tailored conversational content architecture focused on full-funnel authority and measurable AI visibility improvements."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#article",
+      "headline": "Why does AI search matter for modern marketing teams?",
+      "description": "AI search, through answer engine optimization (AEO), is critical for modern marketing teams because it enables the creation of answer ecosystems that improve AI visibility and category authority. This approach helps shorten sales cycles, reduce friction in buyer decision-making, and provides measurable revenue impact, differentiating teams in competitive environments. The focus shifts from traditional traffic metrics to revenue-driven outcomes that align with strategic business goals.",
+      "datePublished": "2026-02-25T16:56:39.078Z",
+      "dateModified": "2026-02-25T17:58:30.563Z",
+      "author": {
+        "@id": "https://answerengineconsulting.com#author"
+      },
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#webpage"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://answerengineconsulting.com/answers#hub",
+      "url": "https://answerengineconsulting.com/answers",
+      "name": "Answers",
+      "publisher": {
+        "@id": "https://answerengineconsulting.com#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://answerengineconsulting.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Answers",
+          "item": "https://answerengineconsulting.com/answers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why does AI search matter for modern marketing teams?",
+          "item": "https://answerengineconsulting.com/answers/ai-search/why-does-ai-search-matter-for-modern-marketing-teams"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <div class="content" set:html={`<!-- TODO: add content -->`} />
+</BaseLayout>

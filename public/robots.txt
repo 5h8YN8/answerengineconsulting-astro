@@ -1,0 +1,52 @@
+# Answer Engine Consulting — robots.txt
+# Allow all standard search engine crawlers
+User-agent: *
+Allow: /
+
+# ── AI Search & Retrieval Bots (ALLOWED) ──────────────────────
+# These surface your content in AI-generated answers — core to AEO
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ── AI Training-Only Bots (BLOCKED) ───────────────────────────
+# These scrape for model training, not to answer user queries
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+# Sitemap
+Sitemap: https://answerengineconsulting.com/sitemap-index.xml

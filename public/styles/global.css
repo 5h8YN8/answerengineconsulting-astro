@@ -8,8 +8,8 @@
   --fg:            hsl(220, 20%, 94%);
   --muted:         hsl(225, 12%, 55%);
   --border:        hsl(225, 20%, 16%);
-  --brand-from:    #7c3aed;
-  --brand-to:      #2563eb;
+  --brand-from:    hsl(230 60% 55%);
+  --brand-to:      hsl(155 60% 45%);
   --radius:        6px;
   --font-mono:     'Fira Code', 'Cascadia Code', 'Courier New', monospace;
 }
@@ -149,7 +149,7 @@ img { max-width: 100%; height: auto; display: block; border-radius: var(--radius
   text-decoration: none;
   padding: 0.375rem 1rem;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--brand-from), var(--brand-to));
+  background: linear-gradient(135deg, hsl(230 60% 55%), hsl(195 80% 50%), hsl(155 60% 45%));
   color: #fff;
   transition: opacity 0.15s;
   white-space: nowrap;
